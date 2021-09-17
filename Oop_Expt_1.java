@@ -12,12 +12,10 @@ class Complex{
         this.real  = real;
 
     }
-    Complex add(Complex c1 ,Complex c2){
-
-        Complex temp = new Complex();
-        temp.real = c1.real + c2.real;
-        temp.img = c1.img + c2.img;
-        return temp;
+   void add(Complex c1 ,Complex c2){
+        this.real = c1.real + c2.real;
+        this.img = c1.img + c2.img;
+        
     }
     Complex Subtract(Complex c1, Complex c2){
         Complex temp = new Complex();
@@ -64,7 +62,7 @@ public class Oop_Expt_1 {
         c2.print();
         
         Complex c3 = new Complex();
-        c3 = c3.add(c1, c2);
+        c3.add(c1, c2);
         System.out.println("SUM : ");
         c3.print();
        
