@@ -52,15 +52,18 @@ public class Oop_Expt_1 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
+       
         Complex c1 = new Complex(x,y);
         c1.print();
+       
         System.out.println("Enter first complex no, real and then imaginary");
         int a= sc.nextInt();
         int b = sc.nextInt();
+       
         Complex c2 = new Complex(a,b);
         c2.print();
+        
         Complex c3 = new Complex();
-      
         c3 = c3.add(c1, c2);
         System.out.println("SUM : ");
         c3.print();
@@ -70,11 +73,11 @@ public class Oop_Expt_1 {
         c3.print();
         
         c3 = c3.multiply(c1, c2);
-        System.out.println("Multiplication : ");
+        System.out.println("Multiplication is: ");
         c3.print();
 
         c3 = c3.Divide(c1, c2);
-        System.out.println("Divide : ");
+        System.out.println("Divide is: ");
         c3.print();
         
         sc.close();
