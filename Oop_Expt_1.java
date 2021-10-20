@@ -12,28 +12,22 @@ class Complex{
         this.real  = real;
 
     }
-   void add(Complex c1 ,Complex c2){
+    void add(Complex c1 ,Complex c2){
         this.real = c1.real + c2.real;
         this.img = c1.img + c2.img;
         
     }
-    Complex Subtract(Complex c1, Complex c2){
-        Complex temp = new Complex();
-        temp.real = c1.real - c2.real;
-        temp.img = c1.img - c2.img;
-        return temp;
+    void Subtract(Complex c1, Complex c2){
+        this.real = c1.real - c2.real;
+        this.img = c1.img - c2.img;
     }
-    Complex multiply(Complex c1 , Complex c2){
-        Complex temp = new Complex();
-        temp.real = c1.real * c2.real;
-        temp.img = c1.img * c2.img;
-        return temp;
+    void multiply(Complex c1 , Complex c2){
+        this.real = c1.real * c2.real;
+        this.img = c1.img * c2.img;
     }
-    Complex Divide(Complex c1, Complex c2){
-        Complex temp = new Complex();
-        temp.real = c1.real / c2.real;
-        temp.img = c1.img / c2.img;
-        return temp;
+    void Divide(Complex c1, Complex c2){
+        this.real = c1.real /c2.real;
+        this.img = c1.img / c2.img;
     }
 
     void print()
@@ -66,16 +60,16 @@ public class Oop_Expt_1 {
         System.out.println("SUM : ");
         c3.print();
        
-        c3 = c3.Subtract(c1, c2);
         System.out.println("Difference is :");
+        c3.Subtract(c1, c2);
         c3.print();
         
-        c3 = c3.multiply(c1, c2);
         System.out.println("Multiplication is: ");
+        c3.multiply(c1, c2);
         c3.print();
 
-        c3 = c3.Divide(c1, c2);
         System.out.println("Divide is: ");
+        c3.Divide(c1, c2);
         c3.print();
         
         sc.close();
